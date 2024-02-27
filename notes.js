@@ -212,7 +212,7 @@ console.log(`John smiths bmi ${john.calcBMI()} is higher than mark millers ${mar
 
 //for loop 
 
-for (let rep=1; rep<=0; rep++){
+for (let rep=1; rep<=30; rep++){
     console.log(`lifting weights repetition ${rep}`)
 }
 
@@ -251,3 +251,82 @@ for (let i=0;i<years.length;i++){
     if(typeof jonas[i] === 'number') break;
     console.log(jonas[i], typeof jonas[i])
 }
+
+
+
+//for loop 
+
+
+
+const jonas=[
+    'Jonas',
+   'schedeman',
+    2037-1991,
+   'teacher',
+   ['michael','jon']
+
+];
+//backwards for
+for (let i = jonas.length-1; i>=0; i--){
+    console.log(jonas[i])
+}
+
+//loop inside of another loop
+for (let rep = 0; rep <3; rep++){
+    console.log(`rep${rep}`);
+
+    for (let exe = 0; exe <5; exe++){
+        console.log(`sss${exe}`);
+    }
+}
+
+
+//for loop 
+
+
+
+const jonas=[
+    'Jonas',
+   'schedeman',
+    2037-1991,
+   'teacher',
+   ['michael','jon']
+
+];
+
+let rep = 3
+while (rep<=10) {
+    console.log(`rep${rep}`);
+
+}
+
+
+//while loop
+
+
+
+const jonas=[
+    'Jonas',
+   'schedeman',
+    2037-1991,
+   'teacher',
+   ['michael','jon']
+
+];
+
+let rep = 3
+while (rep<=10) {
+    console.log(`rep${rep}`);
+    rep++
+
+}
+
+let dice = Math.trunc(Math.random()*6)+1
+console.log(dice)
+
+while (dice !== 6){
+    console.log(`you rolled a ${dice}`);
+    dice= Math.trunc(Math.random()*6)+1;
+    if(dice===6) console.log('loop is about to end...')
+}
+
